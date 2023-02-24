@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./cart.js" type="module"></script>
+    <title>Beauty and Gold Ltd</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-cart">
+        <h1 class="title"><a href="index.html">Beauty and Gold Ltd</a></h1>
+      </div>
+    </header>
+    <div class="contiene-tutto">
+      <div class="container-car-back">
+        <div class="cart-description-page">
+          <div class="card-back-title">
+            <h3>Payment</h3>
+          </div>
+          <div class="select-cart">
+            <div class="carte-di-credito">
+              <img src="./img/carte.png" alt="carte" />
+            </div>
+            <div class="paypal">
+              <img src="./img/paypal.png" alt="paypal" />
+            </div>
+          </div>
+        </div>
+        <div class="div-element-cart">
+          <div class="element-cart-title">
+            <h3>Items In Cart</h3>
+          </div>
+          <div class="container-page"></div>
+        </div>
+      </div>
+      <div class="checkout">
+        <div class="title-check">
+          <h3>Order Summary</h3>
+        </div>
+        <div class="prodotti">
+          <div class="totale-prodotti">
+            <p>Quantità</p>
+            <p id="totale-prodotti"></p>
+          </div>
+          <div class="totale-tutto">
+            <p>Totale Parziale</p>
+            <p id="totale-tutto"></p>
+          </div>
+          <div class="iva">
+            <p>IVA</p>
+            <p id="iva"></p>
+          </div>
+          <div class="spedizione">
+            <p>Spedizione</p>
+            <p>€ 5.00</p>
+          </div>
+          <div class="totale">
+            <p>Totale</p>
+            <p id="totale"></p>
+          </div>
+        </div>
+        <p class="inserisci">Inserisci metodo di pagameto</p>
+        <button class="btn-check">Checkout</button>
+      </div>
+    </div>
+    <div class="modal-bg">
+      <div class="modal-check">
+        <form class="form-check">
+          <input type="text" placeholder="Nome" required />
+          <input type="text" placeholder="Cognome" required />
+          <input type="city" placeholder="Citta" required />
+          <input type="indirizzo" placeholder="Indirizzo" required />
+          <input type="number" placeholder="Codice postale" required />
+          <input type="email" placeholder="Inserisci la tua email" required />
+          <input class="btn-paga" type="submit" value="Paga" />
+          <span class="spanX">x</span>
+        </form>
+      </div>
+      <div class="modal-thanks">
+        <p class="thanks">
+          Grazie per aver acquistato da Beauty and Gold! Le invieremo un email
+          di conferma ordine.
+        </p>
+        <img src="./img/smile.png" alt="happy" />
+        <p><a href="index.html">Ritorna alla home</a></p>
+      </div>
+    </div>
+  </body>
+</html>

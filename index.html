@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" type="module"></script>
+    <title>Beauty and Gold Ltd</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-cart">
+        <h1 class="title">Beauty and Gold Ltd</h1>
+        <div class="form-icons">
+          <form class="search-form">
+            <input
+              class="search"
+              type="search"
+              id="search"
+              placeholder="What do you want to find?"
+            />
+            <input class="submint" type="submit" id="submit" value="Search" />
+          </form>
+          <div class="icons">
+            <p>Sing in</p>
+            <img class="notifiche" src="./img/notifiche.png" alt="notifiche" />
+            <div class="relativ">
+              <div class="pallino">
+                <p class="pallino-text"></p>
+              </div>
+              <img class="carrello" src="./img/carrello.png" alt="carrello" />
+            </div>
+            <img class="cuore" src="./img/miPiace.png" alt="preferiti" />
+          </div>
+        </div>
+      </div>
+      <div class="menu">
+        <img class="hamburger-menu" src="/img/menu.png" alt="menu" />
+        <p>Popular</p>
+        <p>Recently Viewed</p>
+        <p>Fashion</p>
+        <p>Tools</p>
+        <p>About Us</p>
+        <p>Contact</p>
+      </div>
+    </header>
+    <main class="main-products">
+      <ul class="sidebar">
+        <li class="all">All</li>
+      </ul>
+      <section class="productcs">
+        <div class="div-category">
+          <h2 class="title-category"></h2>
+          <img class="loading" src="./img/loading-gif.gif" alt="#" />
+        </div>
+        <div class="slide-hero">
+          <div class="slide-pink show">
+            <p>Get 15% off your first order</p>
+            <button class="shop">Shop now</button>
+          </div>
+          <div class="slide-green">
+            <p>
+              You deserve an upgrade: Take 15% off* Get the latest in tech for
+              less
+            </p>
+            <button class="shop">Shop now</button>
+          </div>
+          <div class="slide-violet">
+            <p>St. Paddy's Day all the way</p>
+            <button class="shop">Shop now</button>
+          </div>
+          <div class="ball">
+            <div class="btn1 active"></div>
+            <div class="btn2"></div>
+            <div class="btn3"></div>
+          </div>
+        </div>
+        <div class="container-card"></div>
+      </section>
+      <div class="tendina-cart">
+        <button class="view-cart"><a href="cart.html">View Cart</a></button>
+        <div class="div-tendina-cart"></div>
+        <p class="quantita-cart"></p>
+        <button class="view-cart2"><a href="cart.html">View Cart</a></button>
+      </div>
+    </main>
+    <div class="bg-card">
+      <div class="div-card">
+        <div class="div-img">
+          <img id="img-cart" alt="img" />
+        </div>
+        <div class="div-description">
+          <p class="descrizione-card-modal"></p>
+          <p class="rate"></p>
+          <p class="price"></p>
+          <p class="iva">Prices escludes IVA</p>
+          <div class="size">
+            <label for="size">Size:</label>
+            <select name="size">
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+            </select>
+          </div>
+          <p class="preferiti">Add to favorites</p>
+        </div>
+      </div>
+    </div>
+    <div class="tendina-preferiti"></div>
+    <footer>
+      <div class="footer">
+        <p>Company Info</p>
+        <p>Investors</p>
+        <p>Contact</p>
+        <p>Get Help</p>
+        <p>Blog</p>
+        <p>Termns of Use</p>
+        <p>Privacy Policy</p>
+        <p>All Legal Policies</p>
+      </div>
+    </footer>
+  </body>
+</html>
