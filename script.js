@@ -15,6 +15,7 @@ const globalState = {
 
 GET().then((data) => {
   globalState.all = data;
+  removeElements(".loader");
   data.forEach((item) => contaierEl.appendChild(cardGenerator(item)));
 });
 
