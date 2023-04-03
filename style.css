@@ -482,6 +482,7 @@ body {
   cursor: pointer;
 }
 .checkout {
+  padding: 10px;
   border: 1px solid #00000025;
   width: 400px;
   height: 400px;
@@ -625,8 +626,10 @@ body {
 .active {
   background-color: #000 !important;
 }
+
 @media screen and (max-width: 960px) {
   .title {
+    max-width: 100px;
     font-size: 20px;
   }
   .submint {
@@ -647,6 +650,9 @@ body {
     gap: 2px;
   }
   .sidebar {
+    position: fixed;
+    z-index: 10;
+    top: 132px;
     opacity: 0;
     margin-left: -162px;
     transition: all 0.35s;
@@ -670,8 +676,9 @@ body {
     padding: 0px;
   }
   .menu {
+    background-color: #fff;
     font-size: 10px;
-    padding: 15px 0px;
+    padding: 8px 10px;
   }
   .bg-card {
     align-items: flex-start;
@@ -706,14 +713,20 @@ body {
     right: 0;
   }
   .contiene-tutto {
+    padding-left: 10px;
     flex-direction: column;
   }
   .cart-description-page,
   .container-car-back {
-    width: 400px;
+    width: 100%;
   }
   .footer {
     font-size: 10px;
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 680px) {
+  .sing {
+    display: none;
   }
 }

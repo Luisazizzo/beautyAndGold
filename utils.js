@@ -27,6 +27,9 @@ const quantitaCart = document.querySelector(".quantita-cart");
 
 preferiti.addEventListener("click", () => {
   tendinaPreferiti.classList.toggle("block");
+  if (tendinaCart.classList.contains("flex")) {
+    tendinaCart.classList.remove("flex");
+  }
 });
 
 hamburgerMenu.addEventListener("click", () => {
@@ -51,6 +54,9 @@ const btnShow = () => {
 carrelloEl.addEventListener("click", () => {
   btnShow();
   tendinaCart.classList.toggle("flex");
+  if (tendinaPreferiti.classList.contains("block")) {
+    tendinaPreferiti.classList.remove("block");
+  }
 });
 
 const removeElements = (elements) => {
