@@ -110,6 +110,7 @@ body {
   display: flex;
   margin-top: 125px;
   position: relative;
+  overflow: hidden;
 }
 .sidebar {
   width: 180px;
@@ -608,6 +609,8 @@ body {
   font-size: 12px;
   color: #000000b9;
   cursor: pointer;
+
+  display: none;
 }
 .none {
   display: none !important;
