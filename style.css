@@ -389,6 +389,10 @@ body {
 .add-cart:hover {
   background-color: #0d84b3;
 }
+.view-cart {
+  visibility: hidden;
+}
+
 .view-cart,
 .view-cart2 {
   padding: 15px 40px;
