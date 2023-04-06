@@ -346,6 +346,7 @@ body {
   transition: all 0.4s;
 }
 .tendina-preferiti {
+  padding: 20px 10px;
   width: 200px;
   height: calc(100vh - 125px);
   background-color: #fff;
@@ -356,6 +357,7 @@ body {
   overflow: auto;
 }
 .div-tendina-cart {
+  margin: 10px 0;
   flex-grow: 1;
   overflow: auto;
 }
@@ -388,9 +390,6 @@ body {
 }
 .add-cart:hover {
   background-color: #0d84b3;
-}
-.view-cart {
-  visibility: hidden;
 }
 
 .view-cart,
@@ -697,12 +696,18 @@ body {
     height: 500px;
     align-items: flex-start;
   }
+  .tendina-preferiti {
+    padding-top: 70px;
+  }
   .div-img img {
     max-width: 120px;
     max-height: 200px;
   }
   .div-img {
     border: none;
+  }
+  .view-cart {
+    visibility: hidden;
   }
   .div-description {
     width: 200px;
